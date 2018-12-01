@@ -25,6 +25,7 @@ import { AppService } from './app.service';
 import { AppInterceptor } from './theme/utils/app-interceptor';
 import { OptionsComponent } from './theme/components/options/options.component';
 import { FooterComponent } from './theme/components/footer/footer.component';
+import { SellerComponent } from './pages/sellers/sellers.component';
 
 
 @NgModule({
@@ -42,6 +43,7 @@ import { FooterComponent } from './theme/components/footer/footer.component';
   declarations: [
     AppComponent,
     PagesComponent,
+    SellerComponent,
     NotFoundComponent,
     TopMenuComponent,
     MenuComponent,

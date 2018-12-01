@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 import { Location } from '@angular/common';
 
 import { SidenavMenu } from './sidenav-menu.model';
-import { sidenavMenuItems } from './sidenav-menu';
+import { sidenavMenuItems, sellerSideNavMenuItems } from './sidenav-menu';
 
 @Injectable()
 export class SidenavMenuService {
@@ -12,6 +12,10 @@ export class SidenavMenuService {
         
     public getSidenavMenuItems():Array<SidenavMenu> {
         return sidenavMenuItems;
+    }
+
+    public getSellerSideNavMenuItems(): Array<SidenavMenu> {
+        return sellerSideNavMenuItems;
     }
 
   

@@ -3,6 +3,7 @@ import { ModuleWithProviders } from '@angular/core';
 
 import { PagesComponent } from './pages/pages.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { SellerComponent } from './pages/sellers/sellers.component';
 
 export const routes: Routes = [
     { 
@@ -20,6 +21,12 @@ export const routes: Routes = [
             { path: 'brands', loadChildren: './pages/brands/brands.module#BrandsModule', data: { breadcrumb: 'Brands' } },
             { path: 'products', loadChildren: './pages/products/products.module#ProductsModule', data: { breadcrumb: 'All Products' } }
         ]
+    },
+    {
+      path: 'seller',
+      component: SellerComponent, children: [
+          { path: '', loadChildren: './pages/sellers/sellers.module#SellersModule', data: { breadcrumb: '' }}
+      ]  
     },
     { path: '**', component: NotFoundComponent }
 ];
