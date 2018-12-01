@@ -4,7 +4,7 @@ import { Product } from "../../app.models";
 
 @Component({
   selector: 'app-home',
-  templateUrl: './home.component.html',
+  templateUrl: '/home.component.html',
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
@@ -34,31 +34,31 @@ export class HomeComponent implements OnInit {
   }
 
   public onLinkClick(e){
-    this.getProducts(e.tab.textLabel.toLowerCase()); 
+    this.getProducts(e.tab.textLabel.toLowerCase());
   }
 
   public getProducts(type){
     if(type == "featured" && !this.featuredProducts){
       this.appService.getProducts("featured").subscribe(data=>{
-        this.featuredProducts = data;      
-      }) 
+        this.featuredProducts = data;
+      })
     }
     if(type == "on sale" && !this.onSaleProducts){
       this.appService.getProducts("on-sale").subscribe(data=>{
-        this.onSaleProducts = data;      
+        this.onSaleProducts = data;
       })
     }
     if(type == "top rated" && !this.topRatedProducts){
       this.appService.getProducts("top-rated").subscribe(data=>{
-        this.topRatedProducts = data;      
+        this.topRatedProducts = data;
       })
     }
     if(type == "new arrivals" && !this.newArrivalsProducts){
       this.appService.getProducts("new-arrivals").subscribe(data=>{
-        this.newArrivalsProducts = data;      
+        this.newArrivalsProducts = data;
       })
     }
-   
+
   }
 
   public getBanners(){

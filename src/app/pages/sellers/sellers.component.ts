@@ -17,9 +17,9 @@ import { SidenavMenuService } from '../../theme/components/sidenav-menu/sidenav-
 
     public settings: Settings;
     constructor(public appSettings:AppSettings,
-            public sidenavMenuService:SidenavMenuService, 
-            public router:Router) { 
-        this.settings = this.appSettings.settings; 
+            public sidenavMenuService:SidenavMenuService,
+            public router:Router) {
+        this.settings = this.appSettings.settings;
     }
 
     ngOnInit() {
