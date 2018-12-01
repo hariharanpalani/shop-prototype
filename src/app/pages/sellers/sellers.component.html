@@ -1,4 +1,4 @@
-<mat-sidenav-container> 
+<mat-sidenav-container>
     <mat-sidenav [opened]="false" mode="over" #sidenav class="sidenav mat-elevation-z6">
         <button mat-icon-button color="warn" class="close" (click)="sidenav.close()">
            <mat-icon color="warn">close</mat-icon>
@@ -13,19 +13,19 @@
             <span fxHide="false" fxHide.gt-sm>
                 <button mat-button (click)="sidenav.toggle()" class="sidenav-toggle">
                     <mat-icon>menu</mat-icon>
-                </button> 
+                </button>
             </span>
             <span fxShow="false" fxShow.gt-xs fxLayoutAlign="center center"></span>
-            <app-top-menu></app-top-menu>       
+            <app-top-menu></app-top-menu>
         </mat-toolbar-row>
     </mat-toolbar>
 
-    <div class="theme-container main"> 
+    <div class="theme-container main">
         <app-breadcrumb></app-breadcrumb>
         <router-outlet></router-outlet>
     </div>
-    
-    <app-footer></app-footer>
+
+    <!-- <app-footer></app-footer> -->
 
     <div *ngIf="showBackToTop" fxLayout="row" fxLayoutAlign="center center" class="back-to-top transition" (click)="scrollToTop()">
         <mat-icon>arrow_upward</mat-icon>

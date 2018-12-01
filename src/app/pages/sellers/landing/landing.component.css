@@ -1,0 +1,12 @@
+.example-card {
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+}
+
+table td:last-child,
+table th:last-child {
+    text-align: right;
+}
