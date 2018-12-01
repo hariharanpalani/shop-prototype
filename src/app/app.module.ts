@@ -26,6 +26,7 @@ import { AppInterceptor } from './theme/utils/app-interceptor';
 import { OptionsComponent } from './theme/components/options/options.component';
 import { FooterComponent } from './theme/components/footer/footer.component';
 import { SellerComponent } from './pages/sellers/sellers.component';
+import { SellerMenuComponent } from './theme/components/sellermenu/sellermenu.component';
 
 
 @NgModule({
@@ -50,7 +51,8 @@ import { SellerComponent } from './pages/sellers/sellers.component';
     SidenavMenuComponent,
     BreadcrumbComponent,
     OptionsComponent,
-    FooterComponent    
+    FooterComponent,
+    SellerMenuComponent
   ], 
   providers: [
     AppSettings,
