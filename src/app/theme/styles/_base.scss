@@ -246,7 +246,7 @@ a{
 }
 
 .info-bar, .footer-bar {
-    margin-top: 30px;
+    // margin-top: 30px;
     .mat-card{
         height: 125px;
         p{
@@ -538,7 +538,7 @@ button.swipe-arrow{
         width: 160px;
     }
     .search-form .categories{
-        width: 140px;
+        width: 100px;
     }
 
 }
@@ -723,4 +723,10 @@ button.swipe-arrow{
 
 .sidenav .mat-drawer-inner-container{
     overflow-x: hidden;
+}
+
+.main {
+    min-height: 400px;
+    min-height: calc(100vh - 288px);
+    padding: 16px 16px 90px 16px;
 }

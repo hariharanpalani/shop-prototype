@@ -1,134 +1,147 @@
-<div class="main">
-  <div fxLayout="row wrap" fxLayoutAlign="space-evenly top">
-    <div fxFlex="100" fxFlex.gt-md="25" fxFlex.gt-xs="25">
-      <mat-expansion-panel class="example-expansion">
-        <mat-expansion-panel-header>
-          <mat-panel-title>
-            <mat-icon class="mat-icon-md m-0">insert_chart_outlined</mat-icon> <strong>Market</strong>
-          </mat-panel-title>
-        </mat-expansion-panel-header>
-        <table>
-          <thead>
-            <tr>
-              <th>Description</th>
-              <th>Price</th>
-            </tr>
-          </thead>
+<div fxLayout="row wrap" fxLayoutAlign="space-evenly top">
+  <div fxFlex="100" fxFlex.gt-md="25" fxFlex.gt-xs="25">
+    <mat-expansion-panel class="example-expansion" [ngStyle]="{'background-color':'#b9bab6'}">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <mat-icon class="mat-icon-md m-0">insert_chart_outlined</mat-icon> <strong>Market</strong>
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <table>
+        <thead>
           <tr>
-            <td>Gold</td>
-            <td>$ 100.00</td>
+            <th>Description</th>
+            <th>Price</th>
           </tr>
+        </thead>
+        <tr>
+          <td>Gold</td>
+          <td>$ 100.00</td>
+        </tr>
+        <tr>
+          <td>Steel</td>
+          <td>$ 85.00</td>
+        </tr>
+        <tr>
+          <td>Petrol</td>
+          <td>$ 65.00</td>
+        </tr>
+        <tr>
+          <td>Rice</td>
+          <td>$ 50.00</td>
+        </tr>
+      </table>
+    </mat-expansion-panel>
+  </div>
+  <div fxFlex="100" fxFlex.gt-md="25" fxFlex.gt-xs="25">
+    <mat-expansion-panel class="example-expansion" [ngStyle]="{'background-color':'#b9bab6'}">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <mat-icon class="mat-icon-md m-0">star_border</mat-icon> <strong>Interest</strong>
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <table>
+        <thead>
           <tr>
-            <td>Steel</td>
-            <td>$ 85.00</td>
+            <th>Rating</th>
+            <th>No.</th>
           </tr>
+        </thead>
+        <tr>
+          <td>
+            <mat-icon class="mat-icon-xs text-muted m-0">star_border</mat-icon>
+            <mat-icon class="mat-icon-xs text-muted m-0">star_border</mat-icon>
+            <mat-icon class="mat-icon-xs text-muted m-0">star_border</mat-icon>
+            <mat-icon class="mat-icon-xs text-muted m-0">star_border</mat-icon>
+            <mat-icon class="mat-icon-xs text-muted m-0">star_border</mat-icon>
+          </td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>
+            <mat-icon class="mat-icon-xs text-muted m-0">star_border</mat-icon>
+            <mat-icon class="mat-icon-xs text-muted m-0">star_border</mat-icon>
+            <mat-icon class="mat-icon-xs text-muted m-0">star_border</mat-icon>
+            <mat-icon class="mat-icon-xs text-muted m-0">star_border</mat-icon>
+          </td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td>
+            <mat-icon class="mat-icon-xs text-muted m-0">star_border</mat-icon>
+            <mat-icon class="mat-icon-xs text-muted m-0">star_border</mat-icon>
+            <mat-icon class="mat-icon-xs text-muted m-0">star_border</mat-icon>
+          </td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>
+            <mat-icon class="mat-icon-xs text-muted m-0">star_border</mat-icon>
+            <mat-icon class="mat-icon-xs text-muted m-0">star_border</mat-icon>
+          </td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>
+            <mat-icon class="mat-icon-xs text-muted m-0">star_border</mat-icon>
+          </td>
+          <td>3</td>
+        </tr>
+      </table>
+    </mat-expansion-panel>
+  </div>
+  <div fxFlex="100" fxFlex.gt-md="25" fxFlex.gt-xs="25">
+    <mat-expansion-panel class="example-expansion" [ngStyle]="{'background-color':'#b9bab6'}">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <mat-icon class="mat-icon-md m-0">visibility</mat-icon> <strong>Visitor</strong>
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <table>
+        <thead>
           <tr>
-            <td>Petrol</td>
-            <td>$ 65.00</td>
+            <th>Country</th>
+            <th>No.</th>
           </tr>
-          <tr>
-            <td>Rice</td>
-            <td>$ 50.00</td>
-          </tr>
-        </table>
-      </mat-expansion-panel>
-    </div>
-    <div fxFlex="100" fxFlex.gt-md="25" fxFlex.gt-xs="25">
-      <mat-expansion-panel class="example-expansion">
-        <mat-expansion-panel-header>
-          <mat-panel-title>
-            <mat-icon class="mat-icon-md m-0">star_border</mat-icon> <strong>Interest</strong>
-          </mat-panel-title>
-        </mat-expansion-panel-header>
-        <table>
-          <thead>
-            <tr>
-              <th>Rating</th>
-              <th>No.</th>
-            </tr>
-          </thead>
-          <tr>
-            <td>
-              <mat-icon class="mat-icon-xs text-muted m-0">star_border</mat-icon>
-              <mat-icon class="mat-icon-xs text-muted m-0">star_border</mat-icon>
-              <mat-icon class="mat-icon-xs text-muted m-0">star_border</mat-icon>
-              <mat-icon class="mat-icon-xs text-muted m-0">star_border</mat-icon>
-              <mat-icon class="mat-icon-xs text-muted m-0">star_border</mat-icon>
-            </td>
-            <td>8</td>
-          </tr>
-          <tr>
-            <td>
-              <mat-icon class="mat-icon-xs text-muted m-0">star_border</mat-icon>
-              <mat-icon class="mat-icon-xs text-muted m-0">star_border</mat-icon>
-              <mat-icon class="mat-icon-xs text-muted m-0">star_border</mat-icon>
-              <mat-icon class="mat-icon-xs text-muted m-0">star_border</mat-icon>
-            </td>
-            <td>7</td>
-          </tr>
-          <tr>
-            <td>
-              <mat-icon class="mat-icon-xs text-muted m-0">star_border</mat-icon>
-              <mat-icon class="mat-icon-xs text-muted m-0">star_border</mat-icon>
-              <mat-icon class="mat-icon-xs text-muted m-0">star_border</mat-icon>
-            </td>
-            <td>6</td>
-          </tr>
-          <tr>
-            <td>
-              <mat-icon class="mat-icon-xs text-muted m-0">star_border</mat-icon>
-              <mat-icon class="mat-icon-xs text-muted m-0">star_border</mat-icon>
-            </td>
-            <td>5</td>
-          </tr>
-          <tr>
-            <td>
-              <mat-icon class="mat-icon-xs text-muted m-0">star_border</mat-icon>
-            </td>
-            <td>3</td>
-          </tr>
-        </table>
-      </mat-expansion-panel>
-    </div>
-    <div fxFlex="100" fxFlex.gt-md="25" fxFlex.gt-xs="25">
-      <mat-expansion-panel class="example-expansion">
-        <mat-expansion-panel-header>
-          <mat-panel-title>
-            <mat-icon class="mat-icon-md m-0">visibility</mat-icon> <strong>Visitor</strong>
-          </mat-panel-title>
-        </mat-expansion-panel-header>
-        <table>
-          <thead>
-            <tr>
-              <th>Country</th>
-              <th>No.</th>
-            </tr>
-          </thead>
-          <tr>
-            <td>India</td>
-            <td>8</td>
-          </tr>
-          <tr>
-            <td>Australia</td>
-            <td>6</td>
-          </tr>
-          <tr>
-            <td>China</td>
-            <td>5</td>
-          </tr>
-          <tr>
-            <td>Germany</td>
-            <td>2</td>
-          </tr>
-        </table>
-      </mat-expansion-panel>
-    </div>
+        </thead>
+        <tr>
+          <td>India</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>Australia</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>China</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>Germany</td>
+          <td>2</td>
+        </tr>
+      </table>
+    </mat-expansion-panel>
+  </div>
+</div>
+
+<div fxLayout="row">
+<div fxFlex="100" fxFlex.gt-md="33" fxFlex.gt-xs="33" fxLayoutAlign="center top" class="counter-extend">
+    <p class="counter">0</p>
+    <p class="title">RFQ</p>
+  </div>
+<div fxFlex="100" fxFlex.gt-md="33" fxFlex.gt-xs="33" fxLayoutAlign="center top" class="counter-extend">
+    <p class="counter">0</p>
+    <p class="title">RFQ</p>
+  </div>
+<div fxFlex="100" fxFlex.gt-md="33" fxFlex.gt-xs="33" fxLayoutAlign="center top" class="counter-extend">
+    <p class="counter">0</p>
+    <p class="title">RFQ</p>
   </div>
 </div>
 
 <div fxLayout="row" class="info-bar">
   <div fxFlex="100" fxFlex.gt-md="25" fxFlex.gt-xs="25">
-    <mat-card class="no-block" fxLayout="row wrap" fxLayoutAlign="space-evenly center">
+    <mat-card class="no-block" fxLayout="row wrap" fxLayoutAlign="space-evenly top">
       <button mat-fab color="primary">
         <mat-icon>list</mat-icon>
       </button>
@@ -136,7 +149,7 @@
     </mat-card>
   </div>
   <div fxFlex="100" fxFlex.gt-md="25" fxFlex.gt-xs="25">
-    <mat-card class="no-block" fxLayout="row wrap" fxLayoutAlign="space-evenly center">
+    <mat-card class="no-block" fxLayout="row wrap" fxLayoutAlign="space-evenly top">
       <button mat-fab color="warn">
         <mat-icon>euro_symbol</mat-icon>
       </button>
@@ -144,7 +157,7 @@
     </mat-card>
   </div>
   <div fxFlex="100" fxFlex.gt-md="25" fxFlex.gt-xs="25">
-    <mat-card class="no-block" fxLayout="row wrap" fxLayoutAlign="space-evenly center">
+    <mat-card class="no-block" fxLayout="row wrap" fxLayoutAlign="space-evenly top">
       <button mat-fab color="accent">
         <mat-icon>attach_money</mat-icon>
       </button>
@@ -152,7 +165,7 @@
     </mat-card>
   </div>
   <div fxFlex="100" fxFlex.gt-md="25" fxFlex.gt-xs="25">
-    <mat-card class="no-block" fxLayout="row wrap" fxLayoutAlign="space-evenly center">
+    <mat-card class="no-block" fxLayout="row wrap" fxLayoutAlign="space-evenly top">
       <button mat-fab color="primary">
         <mat-icon>navigation</mat-icon>
       </button>
