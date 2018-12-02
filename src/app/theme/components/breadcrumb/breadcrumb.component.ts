@@ -52,12 +52,12 @@ export class BreadcrumbComponent {
                 if(node.params.name){
                     this.breadcrumbs.push({
                         name: node.params.name,
-                        url: '/' + url
+                        url: '/'
                     }) 
                 }else{                
                     this.breadcrumbs.push({
                         name: node.data['breadcrumb'],
-                        url: '/' + url
+                        url: '/'
                     }) 
                 }
             }         

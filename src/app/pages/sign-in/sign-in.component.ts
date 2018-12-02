@@ -32,7 +32,7 @@ export class SignInComponent implements OnInit {
 
   public onLoginFormSubmit(values:Object):void {
     //if (this.loginForm.valid) {
-    this.router.navigate(['/home']);
+    this.router.navigate(['/seller']);
     //}
   }
 

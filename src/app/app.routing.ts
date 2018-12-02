@@ -9,8 +9,8 @@ export const routes: Routes = [
     { 
         path: '', 
         component: PagesComponent, children: [
-            { path: '', loadChildren: './pages/sign-in/sign-in.module#SignInModule', data: { breadcrumb: 'Sign In ' } },
-            { path: 'home', loadChildren: './pages/home/home.module#HomeModule' },
+            //{ path: '', loadChildren: './pages/sign-in/sign-in.module#SignInModule', data: { breadcrumb: 'Sign In ' } },
+            { path: '', loadChildren: './pages/home/home.module#HomeModule' },
             { path: 'account', loadChildren: './pages/account/account.module#AccountModule', data: { breadcrumb: 'Account Settings' } },
             { path: 'compare', loadChildren: './pages/compare/compare.module#CompareModule', data: { breadcrumb: 'Compare' } },
             { path: 'wishlist', loadChildren: './pages/wishlist/wishlist.module#WishlistModule', data: { breadcrumb: 'Wishlist' } },

@@ -29,7 +29,7 @@
                 </button>
             </span>
             <span fxShow="false" fxShow.gt-xs fxLayoutAlign="center center"></span>
-            <app-top-menu></app-top-menu>
+            <app-top-menu showSignIn="true"></app-top-menu>
         </mat-toolbar-row>
         <mat-toolbar-row fxLayoutAlign="space-between center" class="logo-toolbar theme-container">
             <div fxFlex fxFlexOffset.gt-sm="12">
@@ -39,14 +39,14 @@
                     </button>
                     <button mat-raised-button [matMenuTriggerFor]="categoriesMenu" #categoriesMenuTrigger="matMenuTrigger"
                         type="button" class="mat-elevation-z0 categories text-truncate">
-                        Products
+                        Products<mat-icon>arrow_drop_down</mat-icon>
                     </button>
                     <mat-menu #categoriesMenu="matMenu" [overlapTrigger]="false" xPosition="before" class="categories-dropdown">
                         <span (mouseleave)="categoriesMenuTrigger.closeMenu()">
                             <app-category-list [categories]="categories" [categoryParentId]="0" (change)="changeCategory($event)"></app-category-list>
                         </span>
                     </mat-menu>
-                    <input type="text" placeholder="Type to search..." fxFlex>
+                    <input type="text" placeholder="Search Products & Suppliers..." fxFlex>
                     <button mat-mini-fab (click)="search()" type="button" class="search-btn mat-elevation-z0 text-muted">
                         <mat-icon>camera_alt</mat-icon>
                     </button>

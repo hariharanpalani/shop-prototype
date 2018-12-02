@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Data, AppService } from '../../../app.service';
 
 @Component({
@@ -6,6 +6,7 @@ import { Data, AppService } from '../../../app.service';
   templateUrl: './top-menu.component.html'
 })
 export class TopMenuComponent implements OnInit {
+  @Input('showSignIn') showSignIn: boolean = false;
   public currencies = ['USD', 'EUR', 'INR'];
   public currency:any;
   public flags = [
