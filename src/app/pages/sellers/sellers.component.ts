@@ -28,6 +28,7 @@ import { AppService } from '../../app.service';
     }
 
     ngOnInit() {
+        this.getCategories();
         this.sidenavMenuItems = this.sidenavMenuService.getSellerSideNavMenuItems();
     }
 
