@@ -11,3 +11,8 @@ table td:last-child,
 table th:last-child {
     text-align: right;
 }
+
+.example-expansion
+{
+    margin-bottom: 20px;
+}

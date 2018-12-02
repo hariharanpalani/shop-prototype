@@ -1,14 +1,12 @@
-<div fxLayout="row wrap" fxLayoutAlign="space-evenly top">
-  <div fxFlex="100" fxFlex.gt-md="25" fxFlex.gt-xs="25">
-    <mat-card class="example-card" [ngStyle]="{'background-color':'#baebff'}">
-      <mat-card-header>
-        <div mat-card-avatar class="example-header-image">
-          <mat-icon class="mat-icon-lg text-muted m-0">insert_chart_outlined</mat-icon>
-        </div>
-        <mat-card-title>Market</mat-card-title>
-        <mat-card-subtitle>Current Market</mat-card-subtitle>
-      </mat-card-header>
-      <mat-card-content>
+<div class="main">
+  <div fxLayout="row wrap" fxLayoutAlign="space-evenly top">
+    <div fxFlex="100" fxFlex.gt-md="25" fxFlex.gt-xs="25">
+      <mat-expansion-panel class="example-expansion">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <mat-icon class="mat-icon-md m-0">insert_chart_outlined</mat-icon> <strong>Market</strong>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
         <table>
           <thead>
             <tr>
@@ -33,19 +31,15 @@
             <td>$ 50.00</td>
           </tr>
         </table>
-      </mat-card-content>
-    </mat-card>
-  </div>
-  <div fxFlex="100" fxFlex.gt-md="25" fxFlex.gt-xs="25">
-    <mat-card class="example-card" [ngStyle]="{'background-color':'#fff244'}">
-      <mat-card-header>
-        <div mat-card-avatar class="example-header-image">
-          <mat-icon class="mat-icon-lg text-muted m-0">star_border</mat-icon>
-        </div>
-        <mat-card-title>Interest</mat-card-title>
-        <mat-card-subtitle>Rating</mat-card-subtitle>
-      </mat-card-header>
-      <mat-card-content>
+      </mat-expansion-panel>
+    </div>
+    <div fxFlex="100" fxFlex.gt-md="25" fxFlex.gt-xs="25">
+      <mat-expansion-panel class="example-expansion">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <mat-icon class="mat-icon-md m-0">star_border</mat-icon> <strong>Interest</strong>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
         <table>
           <thead>
             <tr>
@@ -94,19 +88,15 @@
             <td>3</td>
           </tr>
         </table>
-      </mat-card-content>
-    </mat-card>
-  </div>
-  <div fxFlex="100" fxFlex.gt-md="25" fxFlex.gt-xs="25">
-    <mat-card class="example-card" [ngStyle]="{'background-color':'#20d620'}">
-      <mat-card-header>
-        <div mat-card-avatar class="example-header-image">
-          <mat-icon class="mat-icon-lg text-muted m-0">visibility</mat-icon>
-        </div>
-        <mat-card-title>Visitor</mat-card-title>
-        <mat-card-subtitle>Current Visitors</mat-card-subtitle>
-      </mat-card-header>
-      <mat-card-content>
+      </mat-expansion-panel>
+    </div>
+    <div fxFlex="100" fxFlex.gt-md="25" fxFlex.gt-xs="25">
+      <mat-expansion-panel class="example-expansion">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <mat-icon class="mat-icon-md m-0">visibility</mat-icon> <strong>Visitor</strong>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
         <table>
           <thead>
             <tr>
@@ -131,7 +121,42 @@
             <td>2</td>
           </tr>
         </table>
-      </mat-card-content>
+      </mat-expansion-panel>
+    </div>
+  </div>
+</div>
+
+<div fxLayout="row" class="info-bar">
+  <div fxFlex="100" fxFlex.gt-md="25" fxFlex.gt-xs="25">
+    <mat-card class="no-block" fxLayout="row wrap" fxLayoutAlign="space-evenly center">
+      <button mat-fab color="primary">
+        <mat-icon>list</mat-icon>
+      </button>
+      <p>My Website</p>
+    </mat-card>
+  </div>
+  <div fxFlex="100" fxFlex.gt-md="25" fxFlex.gt-xs="25">
+    <mat-card class="no-block" fxLayout="row wrap" fxLayoutAlign="space-evenly center">
+      <button mat-fab color="warn">
+        <mat-icon>euro_symbol</mat-icon>
+      </button>
+      <p>Membership</p>
+    </mat-card>
+  </div>
+  <div fxFlex="100" fxFlex.gt-md="25" fxFlex.gt-xs="25">
+    <mat-card class="no-block" fxLayout="row wrap" fxLayoutAlign="space-evenly center">
+      <button mat-fab color="accent">
+        <mat-icon>attach_money</mat-icon>
+      </button>
+      <p>Exchange Rate</p>
+    </mat-card>
+  </div>
+  <div fxFlex="100" fxFlex.gt-md="25" fxFlex.gt-xs="25">
+    <mat-card class="no-block" fxLayout="row wrap" fxLayoutAlign="space-evenly center">
+      <button mat-fab color="primary">
+        <mat-icon>navigation</mat-icon>
+      </button>
+      <p>Translation</p>
     </mat-card>
   </div>
 </div>
@@ -158,12 +183,12 @@
       <div fxLayout="row wrap" fxLayoutAlign="space-between top">
         <div fxFlex="100" fxFlex.gt-md="49" fxFlex.gt-xs="49">
           <mat-card class="example-card">
-<img mat-card-image src="assets/images/products/pc/1-medium.png">
+            <img mat-card-image src="assets/images/products/pc/1-medium.png">
           </mat-card>
         </div>
         <div fxFlex="100" fxFlex.gt-md="49" fxFlex.gt-xs="49">
           <mat-card class="example-card">
-<img mat-card-image src="assets/images/products/printer/1-medium.png">
+            <img mat-card-image src="assets/images/products/printer/1-medium.png">
           </mat-card>
         </div>
       </div>

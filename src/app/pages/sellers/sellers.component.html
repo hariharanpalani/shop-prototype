@@ -27,12 +27,12 @@
 
     <app-seller-menu fxShow="false" fxShow.gt-sm></app-seller-menu>
 
-    <div class="theme-container main"> 
+    <div class="theme-container main">
         <app-breadcrumb></app-breadcrumb>
         <router-outlet></router-outlet>
     </div>
 
-    <!-- <app-footer></app-footer> -->
+    <app-footer></app-footer>
 
     <div *ngIf="showBackToTop" fxLayout="row" fxLayoutAlign="center center" class="back-to-top transition" (click)="scrollToTop()">
         <mat-icon>arrow_upward</mat-icon>
