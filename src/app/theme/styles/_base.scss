@@ -356,10 +356,13 @@ a{
     overflow: hidden;
     .scanner {
         height: 40px;
-        /*width: 180px;*/
         border-radius: 0;
         background: none !important;
         color: #fff !important;
+    }
+    .categories {
+        height: 40px;
+        border-radius: 0;
     }
     input[type=text]{
         border: 0;
