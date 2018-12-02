@@ -11,3 +11,22 @@ table td:last-child,
 table th:last-child {
     text-align: right;
 }
+
+.example-expansion
+{
+    margin-bottom: 20px;
+}
+
+.mat-expansion-panel-header strong{
+    padding-left: 10px;
+}
+
+.counter-extend
+{
+    display: inline-block;
+}
+
+.counter-extend .counter
+{
+    font-size: 50px;
+}
