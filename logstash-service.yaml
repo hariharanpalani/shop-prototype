@@ -1,0 +1,60 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cb-agent-service
+spec:
+  replicas: 1
+  minReadySeconds: 30
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+    type: RollingUpdate
+  selector:
+    matchLabels:
+      deployment: cb-agent-service
+  template:
+    metadata:
+      labels:
+        deployment: cb-agent-service
+    spec:
+      containers:
+      - name: logstash
+        image: docker.elastic.co/logstash/logstash:6.7.0
+        volumeMounts:
+        - name: log-pipeline-config
+          mountPath: /usr/share/logstash/pipeline
+        - name: shared-logs
+          mountPath: /usr/share/logstash/logs/
+        command:
+        - logstash
+      - name: cb-agent-service
+        image: cashberry/agent-service
+        imagePullPolicy: IfNotPresent
+        volumeMounts:
+        - mountPath: /usr/data/logs
+          name: shared-logs
+        ports:
+        - containerPort: 8085
+      volumes:
+      - name: shared-logs
+        emptyDir: {}
+      - name: log-pipeline-config
+        configMap:
+          name: logstash-conf
+          items:
+          - key: logstash.conf
+            path: logstash.conf
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: cb-agent-service
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+    targetPort: 8085
+  selector:
+    deployment: cb-agent-service
+      
